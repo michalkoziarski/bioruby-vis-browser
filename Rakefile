@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bio-vis-browser"
   gem.homepage = "http://github.com/e-mka/bioruby-vis-browser"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Image browser for bio-vis}
+  gem.description = %Q{Bio-vis-browser enables browsing and manipulating image files created by bio-vis}
   gem.email = "michalkoziarski@gmail.com"
   gem.authors = ["e-mka"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,

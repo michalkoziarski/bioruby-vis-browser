@@ -14,7 +14,7 @@ class Image < ActiveRecord::Base
   before_create :set_file_modification_time
   
   def self.dir
-    "#{File.dirname(__FILE__)}/../../../tmp"
+    Bio::File::default_dir
   end
   
   def self.reload_images    
