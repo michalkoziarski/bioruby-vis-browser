@@ -22,12 +22,17 @@ class Image < ActiveRecord::Base
     
     entries.each do |entry|
       image = Image.find_by_path(entry)
+      
       if !image
         Image.create(:path => entry)
       elsif image.file_modification_time.utc.to_s != File.mtime("#{Image.dir}/#{entry}").utc.to_s
         image.destroy
         Image.create(:path => entry)
       end
+    end
+    
+    Image.all.each do |image|
+      image.destroy unless entries.include?(image.path)
     end
   end
   

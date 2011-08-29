@@ -1,6 +1,10 @@
 = bio-vis-browser
 
-Description goes here.
+Bio-vis-browser is an image browsing tool for bio-vis.
+
+== Usage
+
+You run bio-vis-browser like any other rails app: in bio-vis-browser/app directory invoke 'rails s', and then in your internet browser go to http://localhost:3000/.
 
 == Contributing to bio-vis-browser
  
